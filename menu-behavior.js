@@ -2,11 +2,13 @@ $('icon-wrapper-home').addClass('red');
 
 $('#horizontal-menu, #vertical-menu').hover(() => {
 	$('#vertical-menu').children('img').addClass('widthTestV').removeClass('pendingVerticalMenuItem');
+	$('#squiggle').addClass('none');
 	$('#horizontal-menu').children("img").addClass("heightTestH").removeClass('pendingVerticalMenuItem');
 }, () => {
   if ($('#vertical-menu').children())
 	$('#vertical-menu').children('img').removeClass('widthTestV').delay(300);
 	$('#horizontal-menu').children("img").removeClass("heightTestH").delay(300);
+	$('#squiggle').removeClass('none');
   $('#horizontal-menu').children("img").not(".selectedMenuItem").addClass('pendingVerticalMenuItem')
   $('#vertical-menu').children("img").not(".selectedMenuItem").addClass('pendingVerticalMenuItem')
   $('#squiggle').removeClass('pendingVerticalMenuItem')
