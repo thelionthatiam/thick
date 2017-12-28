@@ -5,104 +5,191 @@
     <title>When in the Thick</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Maven+Pro|Quicksand|Didact+Gothic:700|Ubuntu:700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-
-
+    <div class="mobile-warning">
+      <div>
+        <h1>
+          Mobile coming soon.<br /> Try a computer for now.
+        </h1>
+      </div>
+    </div>
     <div class="full-page">
     	<div class="side-menu" >
-    		<div id="home-symbol" class="icon-wrapper-home">
-    				<img  src="http://juliantheberge.com/Images/ben-rough/site-logo.png"/>
+    		<div id="home-symbol" class="icon-wrapper-home fade">
+    			<img  src="http://juliantheberge.com/Images/ben-rough/site-logo.png"/>
     		</div>
     		<div class="icon-wrapper" id="vertical-menu">
-    			<img id="v-one" class="defaultWidthV pendingVerticalMenuItem selectedMenuItem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/2000px-White_dot.svg.png"/>
-    			<img id="v-two" class="defaultWidthV pendingVerticalMenuItem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/2000px-White_dot.svg.png"/>
-    			<img id="v-three" class="defaultWidthV pendingVerticalMenuItem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/2000px-White_dot.svg.png"/>
+    			<img id="v-one" class="defaultWidthV selectedMenuItem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/2000px-White_dot.svg.png"/>
+    			<img id="v-two" class="defaultWidthV pendingMenuItem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/2000px-White_dot.svg.png"/>
+    			<img id="v-three" class="defaultWidthV pendingMenuItem fade none" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/2000px-White_dot.svg.png"/>
     		</div>
     	</div>
     	<div class="top-menu">
     		<div class="icon-wrapper" id="horizontal-menu">
-    			<img id="one" class="defaultHeightH selectedMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%201.png"/>
-    			<img id="two" class="defaultHeightH pendingVerticalMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%202.png"/>
-    			<img id="three" class="defaultHeightH pendingVerticalMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%203.png"/>
-    			<img id="four" class="defaultHeightH pendingVerticalMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%204.png"/>
-    			<img id="five" class="defaultHeightH pendingVerticalMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%205.png"/>
-    			<img id="six" class="defaultHeightH pendingVerticalMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%206.png"/>
+    			<img id="h-one" class="defaultHeightH pendingMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%201.png"/>
+    			<img id="h-two" class="defaultHeightH pendingMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%203.png"/>
+    			<img id="h-three" class="defaultHeightH pendingMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%204.png"/>
+    			<img id="h-four" class="defaultHeightH pendingMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%205.png"/>
+    			<img id="h-five" class="defaultHeightH pendingMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%206.png"/>
+    			<img id="h-six" class="defaultHeightH pendingMenuItem" src="http://juliantheberge.com/Images/ben-rough/mini-pink-Artboard%202.png"/>
     		</div>
     		<div class="frame">
     			<div class="subFrame">
-    				<ul id="lightSlider" class="zerothMove">
-    				  <li class="sliderFrame" id="">
-    				 		<div id="anotherLightSlider" class="oneth">
+    				<ul id="grid-wrapper" class="zerothMove">
+    				  <li class="row" id="">
+    				 		<div id="row-one" class="oneth">
     						  <div class="imageWrapper">
-    						  	<img src="http://juliantheberge.com/Images/ben-rough/Artboard%202.png" />
+    						  	<img src="http://juliantheberge.com/Images/ben-rough/site-logo.png" />
     						  </div>
-        						<div class="imageWrapper">
-    						  <img src="http://juliantheberge.com/Images/ben-rough/Artboard%203.png" />
+        					<div class="imageWrapper">
+    						    <img src="http://juliantheberge.com/Images/ben-rough/final-line-Artboard%201.png" />
     							</div>
     							<div class="imageWrapper">
-    						  <img src="http://juliantheberge.com/Images/ben-rough/Artboard%204.png" />
+    						    <img src="http://juliantheberge.com/Images/ben-rough/final-line-Artboard%202.png" />
     							</div>
     							<div class="imageWrapper">
-    						  <img src="http://juliantheberge.com/Images/ben-rough/Artboard%205.png" />
+    						    <img src="http://juliantheberge.com/Images/ben-rough/final-line-Artboard%203.png" />
     							</div>
     							<div class="imageWrapper">
-    						  <img src="http://juliantheberge.com/Images/ben-rough/Artboard%206.png" />
+    						    <img src="http://juliantheberge.com/Images/ben-rough/final-line-Artboard%204.png" />
     							</div>
     						  <div class="imageWrapper">
-    						  <img src="http://juliantheberge.com/Images/ben-rough/Artboard%207.png" />
+    						    <img src="http://juliantheberge.com/Images/ben-rough/final-line-Artboard%205.png" />
+    							</div>
+                  <div class="imageWrapper">
+    						    <img src="http://juliantheberge.com/Images/ben-rough/final-line-Artboard%206.png" />
     							</div>
     					  </div>
     				  </li>
-    				  <li class="sliderFrame" id="">
-    					 <div id="aaLightSlider" class="oneth">
-    					  <div class="imageWrapper titleWrapper">
-    						  <h1>1Ulmus Procera</h1><br/>
-    						  <p>or the english elm</p>
+    				  <li class="row" id="">
+    					 <div id="row-two" class="oneth">
+    					  <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">When in the thick.</h1><br/>
+                    <p class="subtitle-medium">an in-progress art show</p>
+                  </div>
     					  </div>
-    					  <div class="imageWrapper titleWrapper">
-    						  <h1>2Ulmus Procera</h1><br/>
-    						  <p>or the english elm</p>
+    					  <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">Ulmus Procera.</h1><br/>
+      						  <p class="subtitle-medium">(or the english elm)</p>
+                  </div>
     					  </div>
-    					  	<div class="imageWrapper titleWrapper">
-    						  <h1>3Ulmus Procera</h1><br/>
-    						  <p>or the english elm</p>
+    					  <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">Betulaceae.</h1><br/>
+      						  <p class="subtitle-medium">(or the Birch)</p>
+                  </div>
     					  </div>
-    					  	<div class="imageWrapper titleWrapper">
-    						  <h1>4Ulmus Procera</h1><br/>
-    						  <p>or the english elm</p>
+    					  <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">Laurus Nobilis.</h1><br/>
+      						  <p class="subtitle-medium">(or the Laurel)</p>
+                  </div>
     					  </div>
-    					  <div class="imageWrapper titleWrapper">
-    						  <h1>5Ulmus Procera</h1><br/>
-    						  <p>or the english elm</p>
+    					  <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">Virtus et Veritas.</h1><br/>
+      						  <p class="subtitle-medium">(or the A-Frame Temple of Light and Truth)</p>
+                  </div>
     					  </div>
-    					  <div class="imageWrapper titleWrapper">
-    						  <h1>6Ulmus Procera</h1><br/>
-    						  <p>or the english elm</p>
+    					  <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">Bird Feeders.</h1><br/>
+      						  <p class="subtitle-medium">(or greasing the pipe for the squirrels)</p>
+                  </div>
+    					  </div>
+                <div class="imageWrapper">
+                  <div class="titleWrapper">
+                    <h1 class="title-large">Battledore and Shuttle-cock.</h1><br/>
+      						  <p class="subtitle-medium">(or Badminton and Birdies)</p>
+                  </div>
     					  </div>
     					 </div>
     				  </li>
-    				  <li class="sliderFrame" id="">
-    						<div id="anotherAnotherLightSlider" class="oneth">
+    				  <li class="row" id="">
+    						<div id="row-three" class="oneth">
                   <div class="imageWrapper titleWrapper">
-      						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+      						  <p class ="font-gar" >Nonthing here right now.</p>
+      					  </div>
+                  <div class="storyWrapper">
+      						    <p>
+                      I came home to find the tree gone.
+                    </p><br /><p>
+                      I had seen photographs of a tree limb larger than my body in diameter pressed close—almost crushing, the south end of my grandmother’s home—the branches pushing at and filling the glass of the bedroom, obscuring the sun.
+                      </p><br /><p>
+                      I had been told that it was cut, the wood moved by logging truck on the afternoon ferry across Elliott Bay to Bainbridge Island to stand in amongst large piles of other felled giants on the cleared chip laden site of a former saw mill.  I came back to find it gone, save for a 4-foot stump—a stub pushing up from the ground so that rather than holding the yard in embrace from above, it looked to be more a navel, protruding up from a grass-moss belly of yard.
+                      </p><br /><p>
+                      Something had been cut.  A cord (many cords, of wood, in fact), though it hadn’t been felled for heat.
+                      </p><br /><p>
+                      It had been felled for fear of falling.  For fear that the disease moving slowly in it would take it anyway.  It was felled to finish what was already in motion.
+                      </p><br /><p>
+                      So I climbed the stump and stood where old wood had once stood, supported, and departed, and counted the rings.
+                      </p><br /><p>
+                      One hundred and twenty-seven rings remembers one hundred and twenty-seven years.
+                      </p><br /><p>
+                      One hundred and twenty-seven years remembers the arrival of my Great Great Grandfather into the same harbour out of which the felled tree had just left.
+                      </p><br /><p>
+                      It remembers, that same year, the burning of a nascent, wooden city, and the making of state from territory.
+                      </p><br /><p>
+                      The seventh ring remembers gold pieces in Yukon rivers and men packing up lives to march on foot through thousands of miles of forest to search and die in the cold.  To strike with pick and axe and hope it might make them rich.
+                      </p><br /><p>
+                      Men who could not—for their culture and circumstances and language and stories and experience—see the trees around them, the birch, the medicinal plants, the means for existing in reciprocity and listening relationship with the land.
+                      </p><br /><p>
+                      And within its first ring, within each cell of wood and bark and root, is the memory of the tree before it.
+                      </p><br /><p>
+                      And because it is an English Elm, a tree not born of seed, but cloned from the root shoots of clones before it, we may say that it is also Columella’s Elm, a Roman Elm.  An Elm of Empires.
+                      </p><br /><p>
+                      An Elm of three empires spanning two continents and two-thousand years.  <br/>
+                      An Elm cloned and grown to train the vines of vineyards and provide leaf hay.  <br/>
+                      An Elm harvested for the heavy straight keels of the Queen’s Navy.  <br/>
+                      An Elm cloned and grown along Highland hedgerows to ensure the division of land once held in common.  <br/>
+                      An Elm cloned and grown and planted for shade along the avenues of titled nobility.  <br/>
+                      An Elm lining the winding boulevards of Olmsted Brother’s many urban visions of ordered nature.<br/>
+                      </p><br /><p>
+                      An Elm raised in Columella’s garden, and now tracing its way to my grandmother’s garden.
+                      </p><br /><p>
+                      I stood, my body contained within one-hundred and twenty-seven rings, and slipped my fingernails into the thin space between dark wet wood and thick, grey cork bark, into the still slick space of xylem—the last living ring of a felled and dying tree.
+                      </p><br /><p>
+                      Xylem was where the fungus had sought life.  A fungus brought by beetle from the East.  The Scolytus Scolytus--the ancient yet fervent acolyte of Ulmus Procera.
+                      </p><br /><p>
+                      Xylem which draws up moisture and nutrients from the roots—helping to form new wood as it goes.
+                      </p><br /><p>
+                      Choking in the xylem.
+                      </p><br /><p>
+                      Echoing a selfsame death.  A death rippling back across the continent.  Back to the titled lands and hedgerows. Back to the vineyards of France and Spain.  Back to Columella; who’s tree is gone.  Gone in the East, and now gone in the west.
+                      </p><br /><p>
+                      Echoing the two eras of selfsame death of the Elms of Europe 1,000 and 4,000 years before Columella.
+                      </p><br /><p>
+                      Other moments when the balance fell away, and the beetle pushed in and the tree choked in the xylem.
+                      </p><br /><p>
+                      So now a navel pushing up from a belly yard.
+                    </p>
       					  </div>
       					  <div class="imageWrapper titleWrapper">
-      						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+      						  <p class ="font-gar" >Nonthing here right now.</p>
       					  </div>
       					  	<div class="imageWrapper titleWrapper">
-      						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+      						  <p class ="font-gar" >Nonthing here right now.</p>
       					  </div>
       					  	<div class="imageWrapper titleWrapper">
-      						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+      						  <p class ="font-gar" >Nonthing here right now.</p>
       					  </div>
       					  <div class="imageWrapper titleWrapper">
-      						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+      						  <p class ="font-gar" >Nonthing here right now.</p>
       					  </div>
       					  <div class="imageWrapper titleWrapper">
-      						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+      						  <p class ="font-gar" >Nonthing here right now.</p>
       					  </div>
     					  </div>
     				  </li>
