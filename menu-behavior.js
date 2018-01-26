@@ -2,12 +2,15 @@
 
 $('#horizontal-menu, #vertical-menu').hover(() => {
 	$('#vertical-menu').children('img').addClass('widthHoverV').removeClass('pendingMenuItem');
-	$('#horizontal-menu').children("img").addClass("heightHoverH").removeClass('pendingMenuItem');
+	$('#horizontal-menu').children('.baseH').addClass('heightHoverH').removeClass('pendingMenuItem')
+	// .children("img").addClass("heightHoverH").removeClass('pendingMenuItem');
 }, () => {
   if ($('#vertical-menu').children())
 	$('#vertical-menu').children('img').removeClass('widthHoverV').delay(300);
-	$('#horizontal-menu').children("img").removeClass("heightHoverH").delay(300);
-  $('#horizontal-menu').children("img").not(".selectedMenuItem").addClass('pendingMenuItem')
+	$('#horizontal-menu').children('.baseH').removeClass("heightHoverH").delay(300);
+	$('#horizontal-menu').children('.baseH').addClass('pendingMenuItem');
+	// $('#horizontal-menu').children("img").removeClass("heightHoverH").delay(300);
+  // $('#horizontal-menu').children("img").not(".selectedMenuItem").addClass('pendingMenuItem')
   $('#vertical-menu').children("img").not(".selectedMenuItem").addClass('pendingMenuItem')
 })
 

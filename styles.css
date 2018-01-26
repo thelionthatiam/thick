@@ -64,21 +64,21 @@ ul, li {
 	width:48px;
 	height:37px;
 	align-self:stretch;
-	padding:.5vw;
+	padding:1vw;
 	z-index: 10;
 	opacity:1;
 	transition:all 300ms;
 }
 
 .icon-wrapper-home > img {
-	width:100%;
-	height:100%;
+	width:90%;
+	height:90%;
 }
 
 .home-grow {
 	padding-left:3px;
 	padding-top:3px;
-	transform:scale(1.2);
+	transform:scale(1.5);
 	transition: all 100ms;
 }
 
@@ -101,6 +101,22 @@ ul, li {
   margin:0 10px 0 10px;
 }
 
+.icon-wrapper-inside {
+	display:flex;
+	justify-content: center;
+	height:100;
+	width:50vw;
+}
+
+.icon-wrapper-inside > img {
+	margin:1.4vw;
+	background-color:white;
+	border:1px solid white;
+	max-height:90%;
+	border-radius:100%;
+	transition:all 300ms;
+}
+
 .icon-wrapper > img {
 	margin:1.4vw;
 	border-radius:100%;
@@ -109,9 +125,15 @@ ul, li {
 .icon-wrapper > img:hover {
   background-color:white;
   border:1px solid white;
-	max-height:100%;
+	max-height:90%;
 	border-radius:100%;
 	transition:all 300ms;
+}
+
+
+
+.icon-wrapper-h {
+
 }
 
 #vertical-menu {
@@ -129,7 +151,17 @@ ul, li {
 	cursor:pointer;
 }
 
-#horizontal-menu {
+.pendingMenuItem {
+  border:1px solid #F4B6AB;
+  background-color:#ffdae0;
+	width:1vw;
+	height:1vw;
+	margin:1vw;
+  border-radius:100%;
+  transition:all 300ms;
+}
+
+.horizontal-menu {
 	position: absolute;
 	top:0;
 	left:0;
@@ -141,39 +173,66 @@ ul, li {
 }
 
 .defaultWidthV {
-	max-width:0px; /*this is too arbitraty*/
+	/* max-width:5px; */
 	padding:.5vw;
 	transition:300ms;
-	transition-delay:600ms;
+	/* transition-delay:600ms; */
 }
 
-.defaultHeightH {
-	height:0px;
-	max-height:0%;
-	padding:.5vw;
-	transition:300ms;
-	transition-delay:600ms;
+.icon-wrapper > img {
+	max-width:0px;
+	max-height:0px;
+}
+
+.icon-wrapper:hover > img {
+	max-width:10px;
+	max-height:10px;
 }
 
 .widthHoverV {
-	max-width:5px;
+	/* width:5px; */
 	transition:all 300ms;
   border:1px solid transparent;
 }
 
-.heightHoverH {
-	height:50px;
-	transition:all 300ms;
-  border:1px solid transparent;
-}
-
-.pendingMenuItem {
-  border:1px solid #F4B6AB;
+.baseH {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid #F4B6AB;
   background-color:#ffdae0;
   border-radius:100%;
   transition:all 300ms;
 }
 
+.baseH:hover {
+	background-color:white;
+	border:1px solid white;
+	border-radius:100%;
+	transition:all 300ms;
+}
+
+.baseH > img {
+	height:0px;
+	width:0px;
+	padding:.5vw;
+	transition:300ms;
+}
+
+.heightHoverH {
+	width: 50px;
+	height: 50px;
+	border-radius:100%;
+	padding:1vw;
+	border:1px solid #ffdae0;
+	margin:1vw;
+	overflow:hidden;
+}
+
+.heightHoverH > img {
+	width:100%;
+	height:100%;
+}
 
 .frame {
 	flex-grow:18;
